@@ -232,6 +232,7 @@
             // If all required fields are filled
             if (validateForm() == true) {
                 // Create an object for the user's data
+                jQuery.ajaxSettings.traditional = true;
                 var userData = {
                     name: $("#name").val(),
                     photo: $("#photo").val(),
